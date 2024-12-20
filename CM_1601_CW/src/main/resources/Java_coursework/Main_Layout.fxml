@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java_coursework.Controller">
+  <top>
+    <Pane prefHeight="58.0" prefWidth="600.0" style="-fx-background-color:  #90EE90;" BorderPane.alignment="CENTER">
+      <children>
+        <Label layoutX="20.0" layoutY="6.0" text="Horse Race">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font></Label>
+      </children>
+    </Pane>
+  </top>
+  <left>
+    <Pane prefHeight="342.0" prefWidth="152.0" style="-fx-background-color: #FFC0CB;" BorderPane.alignment="CENTER">
+      <children>
+        <VBox layoutY="-1.0" prefHeight="353.0" prefWidth="151.0">
+          <children>
+              <Button fx:id="button" mnemonicParsing="false" onAction="#home" prefHeight="61.0" prefWidth="151.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Home" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+                </font>
+              </Button>
+            <Button mnemonicParsing="false" onAction="#AHD" prefHeight="61.0" prefWidth="151.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="1. AHD" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+              </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#UHD" prefHeight="61.0" prefWidth="153.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="2. UHD" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+              </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DHD" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="3. DHD" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+              </font>
+            </Button>
+                  <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#VHD" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="4. VHD" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="185.0" mnemonicParsing="false" onAction="#SHD" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="5. SHD" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="231.0" mnemonicParsing="false" onAction="#Start" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Start" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Button>
+          </children>
+        </VBox>
+            <VBox layoutY="482.0" prefHeight="61.0" prefWidth="152.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#exit" prefHeight="74.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3px 0px 0px 0px;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+      </children>
+    </Pane>
+  </left>
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <StackPane fx:id="contentArea" prefHeight="542.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>
